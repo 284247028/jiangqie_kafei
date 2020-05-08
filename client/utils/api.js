@@ -22,6 +22,11 @@ function makeRes(res, name) {
     return `https://${Config.JQ_DOMAIN}/wp-content/plugins/jiangqie-api/public/${res}/${name}`;
 }
 
+function makeB2URL(action) {
+    return `https://${Config.JQ_DOMAIN}/wp-json/b2/v1/${action}`;
+}
+
+
 module.exports = {
 
     /**
@@ -128,6 +133,11 @@ module.exports = {
      * 删除评论
      */
     JIANGQIE_COMMENT_DELETE: makeURL('comment', 'delete'),
+
+    /**
+    * 获取pdf下载地址
+    */
+    B2_getDownloadPageData: makeB2URL('getDownloadPageData'),
 
     JIANGQIE_BG_INDEX: makeRes('images', 'id_bg.png'),
     JIANGQIE_BG_TIMELINE: makeRes('images', 'timeline_bg.png'),

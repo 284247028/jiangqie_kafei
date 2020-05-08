@@ -17,7 +17,7 @@
 		</view>
 	</view>
 	<view class="jiangqie-page-body">
-
+    <button  catchtap='handlerPreviewPdf'>点击打开pdf报告</button>
 		<template is="wxParse" data="{{wxParseData:article.nodes}}" />
 
 		<view class="jiangqie-page-body-end">
