@@ -10,6 +10,6 @@
 
 module.exports = {
     //你的域名
-    JQ_DOMAIN: 'xcx.jiangqie.com',
+    JQ_DOMAIN: 'www.duwanjuan.cn',
     JQ_DEBUG: false
 }

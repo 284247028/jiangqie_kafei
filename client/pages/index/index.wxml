@@ -84,7 +84,7 @@
 					</view>
 					<block wx:for="{{postsLast}}" wx:key="id">
 						<view wx:if="{{index%5==4}}" class="jiangqie-news-block image-wide" data-id="{{item.id}}" catchtap="handlerArticleClick">
-							<image src="{{item.thumbnail}}" mode="aspectFill" class="jiangqie-news-image"></image>
+							<image src="{{item.thumbnail}}?x-oss-process=image/resize,m_fill,h_160,w_240" mode="aspectFill" class="jiangqie-news-image"></image>
 							<view class="jiangqie-news-text">
 								<view class="jiangqie-news-title {{item.excerpt?'':'jiangqie-news-no-excerpt'}}">{{item.title}}</view>
 								<view wx:if="{{item.excerpt}}" class="jiangqie-news-describe">{{item.excerpt}}</view>
@@ -98,7 +98,7 @@
 							</view>
 						</view>
 						<view wx:else class="jiangqie-news-block" data-id="{{item.id}}" catchtap="handlerArticleClick">
-							<image src="{{item.thumbnail}}" mode="aspectFill" class="jiangqie-news-image"></image>
+							<image src="{{item.thumbnail}}?x-oss-process=image/resize,m_fill,h_80,w_120" mode="aspectFill" class="jiangqie-news-image"></image>
 							<view class="jiangqie-news-text">
 								<view class="jiangqie-news-title {{item.excerpt?'':'jiangqie-news-no-excerpt'}}">{{item.title}}</view>
 								<view wx:if="{{item.excerpt}}" class="jiangqie-news-describe">{{item.excerpt}}</view>
